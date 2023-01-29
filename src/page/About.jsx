@@ -5,12 +5,16 @@ import Hero from '../asset/hero.jpg'
 
 export default function About() {
 
+  useEffect(() => {
+    AOS.init({duration:900})
+  }, [])
+
   return <div name='about' className={div1}>
-    <h1 className={h1}>About Me <div className={h1Div}></div></h1>
+    <h1 data-aos='fade-left' className={h1}>About Me <div className={h1Div}></div></h1>
     <div className={div2}>
-      <article className={article}>
+      <article data-aos='fade-top' className={article}>
         <p>Hello! My name is Jaenudin but i would love if you call me <span className={pSpan}>Zedd</span>, and i enjoy crating things that
-           live on internet. My interest in front end developer started back in 2021 when
+           live on internet. My interest in front end developer started back in 2022 when
            i decide to try make bin generator thaught me a lot about Html, Css, and JavaScript
         </p>
         <p>I also really like to costumize my linux desktop</p>
@@ -22,7 +26,7 @@ export default function About() {
           <li>Next.js</li>
         </ul>
       </article>
-      <div className={divImg}>
+      <div className={divImg} data-aos='fade-bottom'>
         <div className={divDiv}></div>
         <img className={img} src={Hero} alt="it's me:)" />
       </div>

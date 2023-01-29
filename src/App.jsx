@@ -2,7 +2,7 @@ import React from 'react'
 import Nav from './page/Nav'
 import Home from './page/Home'
 import About from './page/About'
-// import Work from './page/Work'
+import Expe from './page/Experience'
 // import Contact from './page/Contact'
 // import Footer from './page/Footer'
 
@@ -14,6 +14,7 @@ function App() {
       <div className='px-6 bg-bg3 h-full w-full sm:px-20 lg:px-40'>
         <Home />
         <About />
+        <Expe />
       </div>
     </div>
   )

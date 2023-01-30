@@ -9,7 +9,7 @@ import Expe from './page/Experience'
 function App() {
 
   return (
-    <div className='text-white bg-bg3 relative'>
+    <div className='text-white bg-bg3 relative overflow-hidden'>
       <Nav />
       <div className='px-6 bg-bg3 h-full w-full sm:px-20 lg:px-40'>
         <Home />

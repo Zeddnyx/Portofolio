@@ -3,7 +3,7 @@ import Nav from './page/Nav'
 import Home from './page/Home'
 import About from './page/About'
 import Expe from './page/Experience'
-// import Contact from './page/Contact'
+import Work from './page/Work'
 // import Footer from './page/Footer'
 
 function App() {
@@ -15,6 +15,7 @@ function App() {
         <Home />
         <About />
         <Expe />
+        <Work />
       </div>
     </div>
   )

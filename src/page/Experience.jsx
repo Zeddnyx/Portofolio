@@ -30,27 +30,27 @@ export default function Experience() {
     </div>
   }
 
-  return <section className={section}>
+  return <section name='experience' className={section}>
     <h1 className={h1} data-aos='fade-left'>Some Things I've Built</h1>
-    <div data-aos='fade-down'>
+    <div >
 
       <div className={parentProject}>
-        <Project judul='Fylo' 
+        <Project data-aos='fade-down' judul='Fylo' 
           desc='Fylo is my first project with React and Tailwind CSS, this is a chalanges form FronEndMentor'
           tag='React, Tailwind CSS'
-          a='https://'  a2='https://' 
+          a='https://github.com/Zeddnyx/Fylo'  a2='https://fylo-zedd.netlify.app' 
           img={Fylo} alt='Fylo landing page'
         />
-        <Project judul='News' 
+        <Project data-aos='fade-down' judul='News' 
           desc='News. this also chalanges from FrontEndMentor and i use API to update the news article' 
           tag='React, Tailwind CSS, API'
-          a='https://' a2='https://' 
+          a='https://github.com/Zeddnyx/News' a2='https://zedd-news.netlify.app' 
           img={News} alt='News' 
         />
-        <Project judul='Neovim' 
+        <Project data-aos='fade-down' judul='Neovim' 
           desc='my Neovim configuration this is IDE that i use to development and learn Front End since i started learning to code' 
           tag='Lua, Vim, Nvim'
-          a='https://' a2='https://' 
+          a='https://github.com/Zeddnyx/Znvim' a2='https://github.com/Zeddnyx/Znvim' 
           img={Nvim} alt='Nvim' 
         />
       </div>
@@ -63,9 +63,9 @@ const section = 'mt-40'
 const h1 = 'text-xl md:text-4xl font-bold font-ls hover:text-cyan md:my-8'
 const h1Div = 'w-full h-[1px] bg-gray1'
 
-const parentProject = 'mt-10 relative mx-auto max-w-xl gap-36 flex flex-col'
+const parentProject = 'mt-10 relative mx-auto max-w-xl px-5 gap-36 flex flex-col'
 
-const projectBg = 'bg-bg2 relative w-full h-66 p-5 md:-mx-5 lg:-mx-20 xl:-mx-40 shadow-xl rounded'
+const projectBg = 'bg-bg2 relative w-full h-66 p-5 md:-mx-20 lg:-mx-20 xl:-mx-40 shadow-xl rounded'
 const h1JudulProject = 'font-bold font-ls text-2xl'
 const pDesc = 'my-3 text-gray2'
 const pTag = 'font-mono text-sm hover:text-cyan'

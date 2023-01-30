@@ -19,7 +19,7 @@ export default function Home() {
   </section>
 }
 
-const section = 'max-w-xs'
+const section = 'max-w-xs mt-36'
 const div1 = 'mt-10 grid gap-2'
 const p = 'font-mono text-cyan'
 const h1 = 'font-ls w-60 text-5xl sm:text-6xl md:text-7xl text-gray1 lg:text-8xl'

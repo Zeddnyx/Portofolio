@@ -3,7 +3,7 @@ import { Link } from 'react-scroll'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Logo from '../asset/z.png'
-import { BiMenuAltRight } from 'react-icons/bi'
+import { RiMenu3Fill } from 'react-icons/ri'
 import { FaRegWindowClose } from 'react-icons/fa'
 
 export default function Nav() {
@@ -40,7 +40,7 @@ export default function Nav() {
       </ul>
 
       <button onClick={handleNav} data-aos='fade-left' className={navMenu}>
-        {!nav ? <BiMenuAltRight size='40' /> : <FaRegWindowClose size='30' /> }
+        {!nav ? <RiMenu3Fill size='40' /> : <FaRegWindowClose size='30' /> }
       </button>
 
       <ul className={!nav ? `hidden` : `${navMobile}`}>
@@ -55,9 +55,9 @@ export default function Nav() {
   </nav>
 }
 
-const nav = 'fixed w-full top-0 left-0 z-50 shadow-xl'
+const nav = 'w-full top-0 left-0 z-50'
 
-const isiNav = 'flex px-3 sm:px-16 h-20 justify-between place-items-center bg-bg3'
+const isiNav = 'flex px-3 w-full z-50 sm:px-16 h-20 justify-between place-items-center bg-bg3 shadow-xl fixed'
 const logo = 'w-[60px] md:w-[70px] cursor-pointer'
 
 const navDesk = 'hidden md:flex flex-row gap-5 items-center text-sm gap-10'

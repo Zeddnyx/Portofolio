@@ -40,7 +40,7 @@ export default function Nav() {
       </ul>
 
       <button onClick={handleNav} data-aos='fade-left' className={navMenu}>
-        {!nav ? <RiMenu3Fill size='40' /> : <FaRegWindowClose size='30' /> }
+        {!nav ? <RiMenu3Fill size='30' /> : <FaRegWindowClose size='30' /> }
       </button>
 
       <ul className={!nav ? `hidden` : `${navMobile}`}>
@@ -58,7 +58,7 @@ export default function Nav() {
 const nav = 'w-full top-0 left-0 z-50'
 
 const isiNav = 'flex px-3 w-full z-50 sm:px-16 h-20 justify-between place-items-center bg-bg3 shadow-xl fixed'
-const logo = 'w-[60px] md:w-[70px] cursor-pointer'
+const logo = 'w-[50px] md:w-[70px] cursor-pointer'
 
 const navDesk = 'hidden md:flex flex-row gap-5 items-center text-sm gap-10'
 const navMenu = 'z-40 md:hidden outline-none text-cyan'

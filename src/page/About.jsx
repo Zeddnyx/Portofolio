@@ -10,7 +10,7 @@ export default function About() {
   }, [])
 
   return <div name='about' className={div1}>
-    <h1 data-aos='fade-left' className={h1}>About Me <div className={h1Div}></div></h1>
+    <h1 data-aos='fade-left' className={h1}>About Me</h1>
     <div className={div2}>
       <article data-aos='fade-top' className={article}>
         <p>Hello! My name is Jaenudin but i would love if you call me <span className={pSpan}>Zedd</span>, and i enjoy crating things that
@@ -36,9 +36,10 @@ export default function About() {
 
 const div1 = 'mt-60 text-gray1'
 
-const div2 = 'flex flex-col gap-12 md:flex-row'
 const h1 = 'text-xl md:text-4xl font-bold font-ls hover:text-cyan md:my-8'
 const h1Div = 'w-full h-[1px] bg-gray1'
+
+const div2 = 'flex flex-col gap-12 md:flex-row'
 
 const article = 'flex flex-col px-5 md:px-0 gap-4 mt-5 text-gray3 text-sm md:text-md lg:text-lg'
 const pSpan = 'text-cyan'

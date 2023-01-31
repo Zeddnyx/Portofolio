@@ -62,7 +62,7 @@ const logo = 'w-[50px] md:w-[70px] cursor-pointer'
 
 const navDesk = 'hidden md:flex flex-row gap-5 items-center text-sm gap-10'
 const navMenu = 'z-40 md:hidden outline-none text-cyan'
-const navMobile = 'flex md:hidden absolute w-[75%] sm:w-[50%] h-full items-center gap-[70px] py-36 bg-bg1 z-30 flex-col right-0 top-0'
+const navMobile = 'flex md:hidden absolute w-[75%] sm:w-[50%] h-screen items-center gap-[70px] py-36 bg-bg1 z-30 flex-col right-0 top-0'
 const li = 'hover:text-cyan hover:border-b cursor-pointer border-cyan font-mono font-bold text-gray1'
 const btnResume = 'px-5 py-2 text-cyan border-2 font-bold border-cyan rounded md:hover:bg-bg1 hover:bg-bg2 outline-none font-mono'
 

@@ -13,7 +13,7 @@ export default function Experience() {
   }, [])
 
   const Project = props => {
-    return <div className='grid gap-5'>
+    return <div data-aos='fade-down' className='grid gap-5'>
       <div className={projectBg}>
         <h1 className={h1JudulProject}>{props.judul}</h1>
         <p className={pDesc}>{props.desc}</p>
@@ -35,19 +35,19 @@ export default function Experience() {
     <div >
 
       <div className={parentProject}>
-        <Project data-aos='fade-down' judul='Fylo' 
+        <Project judul='Fylo' 
           desc='Fylo is my first project with React and Tailwind CSS, this is a chalanges form FronEndMentor'
           tag='React, Tailwind CSS'
           a='https://github.com/Zeddnyx/Fylo'  a2='https://fylo-zedd.netlify.app' 
           img={Fylo} alt='Fylo landing page'
         />
-        <Project data-aos='fade-down' judul='News' 
+        <Project judul='News' 
           desc='News. this also chalanges from FrontEndMentor and i use API to update the news article' 
           tag='React, Tailwind CSS, API'
           a='https://github.com/Zeddnyx/News' a2='https://zedd-news.netlify.app' 
           img={News} alt='News' 
         />
-        <Project data-aos='fade-down' judul='Neovim' 
+        <Project judul='Neovim' 
           desc='my Neovim configuration this is IDE that i use to development and learn Front End since i started learning to code' 
           tag='Lua, Vim, Nvim'
           a='https://github.com/Zeddnyx/Znvim' a2='https://github.com/Zeddnyx/Znvim' 

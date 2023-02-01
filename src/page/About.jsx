@@ -36,7 +36,7 @@ export default function About() {
 
 const div1 = 'mt-60 text-gray1'
 
-const h1 = 'text-xl md:text-4xl font-bold font-ls hover:text-cyan md:my-8'
+const h1 = 'text-2xl sm:text-4xl md:text-4xl font-bold font-ls hover:text-cyan md:my-8'
 const h1Div = 'w-full h-[1px] bg-gray1'
 
 const div2 = 'flex flex-col gap-12 md:flex-row'

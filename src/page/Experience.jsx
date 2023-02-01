@@ -37,13 +37,13 @@ export default function Experience() {
       <div className={parentProject}>
         <Project judul='Fylo' 
           desc='Fylo is my first project with React and Tailwind CSS, this is a chalanges form FronEndMentor'
-          tag='React, Tailwind CSS'
+          tag='React, Tailwind CSS, Netlify'
           a='https://github.com/Zeddnyx/Fylo'  a2='https://fylo-zedd.netlify.app' 
           img={Fylo} alt='Fylo landing page'
         />
         <Project judul='News' 
           desc='News. this also chalanges from FrontEndMentor and i use API to update the news article' 
-          tag='React, Tailwind CSS, API'
+          tag='React, Tailwind CSS, NYTIMES API, Netlify'
           a='https://github.com/Zeddnyx/News' a2='https://zedd-news.netlify.app' 
           img={News} alt='News' 
         />
@@ -60,7 +60,7 @@ export default function Experience() {
 }
 
 const section = 'mt-40'
-const h1 = 'text-xl text-gray1 md:text-4xl font-bold font-ls hover:text-cyan md:my-8'
+const h1 = 'text-2xl sm:text-4xl text-gray1 md:text-5xl font-bold font-ls hover:text-cyan md:my-8'
 const h1Div = 'w-full h-[1px] bg-gray1'
 
 const parentProject = 'mt-10 relative mx-auto max-w-xl px-5 gap-36 flex flex-col'
@@ -68,7 +68,7 @@ const parentProject = 'mt-10 relative mx-auto max-w-xl px-5 gap-36 flex flex-col
 const projectBg = 'bg-bg2 relative w-full h-66 p-5 md:-mx-20 lg:-mx-20 xl:-mx-40 shadow-xl rounded'
 const h1JudulProject = 'font-bold font-ls text-2xl'
 const pDesc = 'my-3 text-gray2'
-const pTag = 'font-mono text-sm text-cyan'
+const pTag = 'font-mono text-sm py-3 text-cyan'
 
 const divImg = ' top-0 w-full md:mx-5 lg:mx-20 xl:mx-40'
 const img = 'object-cover relative rounded'

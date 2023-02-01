@@ -4,6 +4,7 @@ import Home from './page/Home'
 import About from './page/About'
 import Expe from './page/Experience'
 import Work from './page/Work'
+import Contact from './page/Contact'
 // import Footer from './page/Footer'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <About />
         <Expe />
         <Work />
+        <Contact />
       </div>
     </div>
   )

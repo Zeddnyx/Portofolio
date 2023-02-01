@@ -1,15 +1,23 @@
+import { useEffect } from 'react'
 import { Outlet, Link } from 'react-router-dom'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 export default function Work1() {
+
+  useEffect(() => {
+    AOS.init({duraion:800})
+  }, [])
+
   return <section>
-    <span className={div}>
+    <div data-aos='fade-top' className={div}>
       <Link to='/'><span className={span}>Work1</span></Link>
       <Link to='/work2'><span className={span}>Work2 </span></Link>
       <Link to='/work3'><span className={span}>Work3</span></Link>
-    </span>
+    </div>
     <Outlet />
   </section>
 }
 
-const div = 'grid grid-cols-3 sm:gap-10 sm:grid-cols-1 my-10 border-b-2 pb-3 border-gray1 sm:border-b-0 sm:border-l-2 '
-const span = 'hover:text-cyan hover:border-b-2 sm:hover:border-b-0 sm:hover:border-l-2 border-cyan p-4 hover:bg-bg2'
+const div = 'flex my-10 border-b-2 p-3 border-gray1 justify-between sm:justify-around'
+const span = 'hover:text-cyan hover:border-b-2 border-cyan p-4 hover:bg-bg2'

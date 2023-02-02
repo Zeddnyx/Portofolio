@@ -65,7 +65,7 @@ const h1Div = 'w-full h-[1px] bg-gray1'
 
 const parentProject = 'mt-10 relative mx-auto max-w-xl px-5 gap-36 flex flex-col'
 
-const projectBg = 'bg-bg2 relative w-full h-66 p-5 md:-mx-20 lg:-mx-20 xl:-mx-40 shadow-xl rounded'
+const projectBg = 'bg-bg2 relative w-full h-66 p-5 md:-mx-10 lg:-mx-20 xl:-mx-40 shadow-xl rounded'
 const h1JudulProject = 'font-bold font-ls text-2xl'
 const pDesc = 'my-3 text-gray2'
 const pTag = 'font-mono text-sm py-3 text-cyan'

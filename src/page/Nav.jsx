@@ -5,6 +5,7 @@ import 'aos/dist/aos.css'
 import Logo from '../asset/z.png'
 import { RiMenu3Fill } from 'react-icons/ri'
 import { FaRegWindowClose } from 'react-icons/fa'
+import { BsArrowDownCircle } from 'react-icons/bs'
 
 export default function Nav() {
 
@@ -36,7 +37,7 @@ export default function Nav() {
         <Li to='experience' li='Experience' />
         <Li to='work'    li='Work' />
         <Li to='contact' li='Contact' />
-        <button className={btnResume} type="submit">Resume</button>
+        <button className={btnResume} type="submit">Resume<span className={spanDownload}><BsArrowDownCircle /></span></button>
       </ul>
 
       <button onClick={handleNav} data-aos='fade-left' className={navMenu}>
@@ -48,7 +49,7 @@ export default function Nav() {
         <Li to='experience' li='Experience' />
         <Li to='work'    li='Work' />
         <Li to='contact' li='Contact' />
-        <button className={btnResume} type="submit">Resume</button>
+        <button className={btnResume} type="submit">Resume <span className={spanDownload}><BsArrowDownCircle /></span></button>
       </ul>
 
     </div>
@@ -64,5 +65,6 @@ const navDesk = 'hidden md:flex flex-row gap-5 items-center text-sm gap-10'
 const navMenu = 'z-40 md:hidden outline-none text-cyan'
 const navMobile = 'flex md:hidden absolute w-[75%] sm:w-[50%] h-screen items-center gap-[70px] py-36 bg-bg1 z-30 flex-col right-0 top-0'
 const li = 'hover:text-cyan hover:border-b cursor-pointer border-cyan font-mono font-bold text-gray1'
-const btnResume = 'px-5 py-2 text-cyan border-2 font-bold border-cyan rounded md:hover:bg-bg1 hover:bg-bg2 outline-none font-mono'
+const btnResume = 'px-5 py-2 flex gap-2 items-center text-cyan border font-bold border-cyan rounded md:hover:bg-bg1 hover:bg-bg2 outline-none font-mono'
+const spanDownload = 'animate-bounce'
 

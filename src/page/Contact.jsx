@@ -10,13 +10,23 @@ export default function Contact() {
   const [name, setlName] = useState('')
   const [msg, setlMsg] = useState('')
 
+  const [notif, setNotif] = useState(false)
+  const handleNotif = () => {
+    // if email didin't field or correctly the notif didin't pop up
+    // and i make pop up gone when is 4sec use setTimout
+    if (email.length > 0) {
+      setNotif(!notif)
+      setTimeout(() => {
+        setNotif(false)
+      }, 4000);
+    } else {
+      setNotif(false)
+    }
+  }
+
   const handleSub = e => {
     e.preventDefault()
 
-    console.log('email:', email)
-    console.log('name:', name)
-    console.log('msg:', msg)
-    alert('Succes Send')
   }
 
   useEffect(() => {
@@ -32,11 +42,15 @@ export default function Contact() {
          I’ll try my best to get back to you!
       </p>
 
+      <div className={!notif ? `hidden` : `realtive z-20 delay-900 bg-bg2 mx-auto rounded w-80 my-5 p-5`}>
+        <p className='text-cyan'>Messages send successfull !</p>
+      </div>
+
       <form onSubmit={handleSub} className={form}>
-        <input className={input} onChange={e => setlEmail(e.target.value)} type="email"  placeholder='example@gmail.com'/>
-        <input className={input} onChange={e => setlName(e.target.value)} type="text"  placeholder='alex'/>
-        <textarea className={textarea} onChange={e => setlMsg(e.target.value)} placeholder='say hello!'> </textarea>
-        <button className={btn} type="submit"><span className={iconSend}><IoIosSend size='25' /></span></button>
+        <input className={input} required onChange={e => setlEmail(e.target.value)} type="email"  placeholder='example@gmail.com'/>
+        <input className={input} required onChange={e => setlName(e.target.value)} type="text"  placeholder='alex'/>
+        <textarea className={textarea} required onChange={e => setlMsg(e.target.value)} placeholder='say hello!'> </textarea>
+        <button className={btn} type="submit" onClick={handleNotif}><span className={iconSend}><IoIosSend size='25' /></span></button>
       </form>
     </div>
 
@@ -53,7 +67,7 @@ export default function Contact() {
     <a className={aSosmed} href="https://github.com/Zeddnyx"><BsGithub size='25' /></a>
     <a className={aSosmed} href="https://t.me/Zeddnyx"><BsTelegram size='25' /></a>
     <a className={aSosmed} href="https://instagram.com/zedd.nyx"><BsInstagram size='25' /></a>
-    <a className={aSosmed} href="https://linkdn.com/Jhondoe"><BsLinkedin size='25' /></a>
+    <a className={aSosmed} href="https://linkdincom/Jhondoe"><BsLinkedin size='25' /></a>
     <div className={line}></div>
   </div>
     

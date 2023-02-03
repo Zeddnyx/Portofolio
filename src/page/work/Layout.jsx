@@ -20,4 +20,4 @@ export default function Work1() {
 }
 
 const div = 'flex my-10 border-b-2 p-3 border-gray1 justify-between sm:justify-around'
-const span = 'hover:text-cyan hover:border-b-2 border-cyan p-4 hover:bg-bg2'
+const span = 'hover:text-cyan text-gray1 font-semibold hover:border-b-2 border-cyan p-4 hover:bg-bg2'

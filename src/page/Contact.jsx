@@ -47,9 +47,9 @@ export default function Contact() {
       </div>
 
       <form onSubmit={handleSub} className={form}>
-        <input className={input} required onChange={e => setlEmail(e.target.value)} type="email"  placeholder='example@gmail.com'/>
-        <input className={input} required onChange={e => setlName(e.target.value)} type="text"  placeholder='alex'/>
-        <textarea className={textarea} required onChange={e => setlMsg(e.target.value)} placeholder='say hello!'> </textarea>
+        <input className={input} required onChange={e => setlEmail(e.target.value)} type="email"  placeholder='example@blabla.com'/>
+        <input className={input} required onChange={e => setlName(e.target.value)} type="text"  placeholder='name'/>
+        <textarea className={textarea} required onChange={e => setlMsg(e.target.value)} placeholder='type something...'> </textarea>
         <button className={btn} type="submit" onClick={handleNotif}><span className={iconSend}><IoIosSend size='25' /></span></button>
       </form>
     </div>

@@ -14,7 +14,7 @@ export default function Contact() {
   const handleNotif = () => {
     // if email didin't field or correctly the notif didin't pop up
     // and i make pop up gone when is 4sec use setTimout
-    if (email.length > 0) {
+    if (email.length > 0 && name.length > 0 && msg.length > 0) {
       setNotif(!notif)
       setTimeout(() => {
         setNotif(false)
@@ -82,8 +82,8 @@ const p = 'p-5 text-gray3 font-semibold text-sm lg:text-md md:px-10 lg:px-40'
 
 const form = 'grid grid-cols-1 gap-4 max-w-xs mx-auto'
 const input = 'bg-transparent text-gray1 hover:bg-bg2 lg:w-96 outline-none rounded border border-cyan p-2 text-gray1 text-sm lg:text-md'
-const textarea = 'bg-transparent text-gray1 hover:bg-bg2 outline-none rounded border-2 border-cyan p-2 h-40 lg:w-96 text-sm lg:text-md'
-const btn = 'px-4 py-2 rounded border-cyan lg:w-96 outline-none border-2 text-cyan font-semibold font-ls my-2 hover:bg-bg2 flex justify-center gap-3 items-center'
+const textarea = 'bg-transparent text-gray1 hover:bg-bg2 outline-none rounded border border-cyan p-2 h-40 lg:w-96 text-sm lg:text-md'
+const btn = 'px-4 py-2 rounded border-cyan lg:w-96 outline-none border text-cyan font-semibold font-ls my-2 hover:bg-bg2 flex justify-center gap-3 items-center'
 const iconSend = 'hover:animate-spin delay-800 ease-out'
 const p2 = 'text-center font-mono text-cyan text-xs flex justify-center gap-2 mt-20 mb-2 items-center'
 

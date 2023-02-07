@@ -1,9 +1,8 @@
 export default function Work1() {
   return <span className={span}>
-    <h1 className={h1}>Work 1 <span className='text-cyan'>@lorem ipsum</span></h1>
-    <p className={desc}>Lorem ipsum dolor sit amet, 
-       qui minim labore
-       adipisicing minim sint cillum sint consectetur cupidatat.
+    <h1 className={h1}>Slicing  <span className='text-cyan'>@lorem ipsum</span></h1>
+    <p className={desc}>
+      Unfortunately i never have experience
     </p>
   </span>
 }

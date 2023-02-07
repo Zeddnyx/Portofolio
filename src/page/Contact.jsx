@@ -14,7 +14,7 @@ export default function Contact() {
   const handleNotif = () => {
     // if email didin't field or correctly the notif didin't pop up
     // and i make pop up gone when is 4sec use setTimout
-    if (email.length > 0 && name.length > 0 && msg.length > 0) {
+    if (email.length > 0) {
       setNotif(!notif)
       setTimeout(() => {
         setNotif(false)
@@ -27,6 +27,16 @@ export default function Contact() {
   const handleSub = e => {
     e.preventDefault()
 
+    const myForm = e.target;
+    const formData = new FormData(myForm);
+    
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => console.log("Form successfully submitted"))
+      .catch((error) => alert(error));
   }
 
   useEffect(() => {
@@ -43,13 +53,14 @@ export default function Contact() {
       </p>
 
       <div className={!notif ? `hidden` : `realtive z-20 delay-900 bg-bg2 mx-auto rounded w-80 my-5 p-5`}>
-        <p className='text-cyan'>Messages send successfull !</p>
+        <p className='text-cyan'>Messages send successful !</p>
       </div>
 
-      <form onSubmit={handleSub} className={form}>
-        <input className={input} required onChange={e => setEmail(e.target.value)} type="email"  placeholder='example@blabla.com'/>
-        <input className={input} required onChange={e => setName(e.target.value)} type="text"  placeholder='name'/>
-        <textarea className={textarea} required onChange={e => setlMsg(e.target.value)} placeholder='type something...'> </textarea>
+      <form onSubmit={handleSub} className={form} name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+        <input className={input} type="text"   name="name" placeholder='name'/>
+        <input className={input} required type="email" name="email"  placeholder='example@blabla.com'/>
+        <textarea className={textarea} required name="messages"></textarea>
         <button className={btn} type="submit" onClick={handleNotif}><span className={iconSend}><IoIosSend size='25' /></span></button>
       </form>
     </div>

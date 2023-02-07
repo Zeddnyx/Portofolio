@@ -43,7 +43,7 @@ const div2 = 'flex flex-col gap-12 md:flex-row'
 
 const article = 'flex flex-col px-5 md:px-0 gap-4 mt-5 text-gray3 text-sm md:text-md lg:text-lg'
 const pSpan = 'text-cyan'
-const ul = 'grid grid-cols-2 list-disc px-5 font-mono'
+const ul = 'grid grid-cols-2 list-disc px-5 font-mono text-cyan'
 
 const divImg = 'w-[290px] h-[310px] relative rounded border-2 border-cyan mx-auto my-5'
 const divDiv = 'w-[285px] h-[300px] bg-cyan z-20 relative opacity-50 hover:opacity-0 -mx-5 md:mx-5 my-5'

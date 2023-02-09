@@ -15,7 +15,7 @@ export default function About() {
       <article data-aos='fade-top' className={article}>
         <p>Hello! My name is Jaenudin but i would love if you call me <span className={pSpan}>Zedd</span>, and i enjoy crating things that
            live on internet. My interest in front end developer started back in 2022 when
-           i decide to try make bin generator thaught me a lot about Html, Css, and JavaScript
+           i decide to try make bin generator thaught me a lot about HTML, CSS, and JavaScript
         </p>
         <p>I also really like to costumize my linux desktop</p>
         <p>Here are a few technologies i've been working with recently</p>
@@ -41,7 +41,7 @@ const h1Div = 'w-full h-[1px] dark:bg-gray1'
 
 const div2 = 'flex flex-col gap-12 md:flex-row'
 
-const article = 'flex flex-col px-5 font-semibold md:px-0 gap-4 mt-5 text-bg3 dark:text-gray3 text-sm md:text-md lg:text-lg'
+const article = 'flex flex-col px-5 font-semibold md:px-0 gap-4 mt-5 text-bg3 dark:text-gray3 text-sm md:text-md '
 const pSpan = 'text-bgLight3 dark:text-cyan'
 const ul = 'grid grid-cols-2 list-disc px-5 font-mono text-bgLight3 dark:text-cyan'
 

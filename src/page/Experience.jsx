@@ -3,7 +3,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Nvim from '../asset/nvim.png'
 import News from '../asset/news.png'
-import Fylo from '../asset/fylo.png'
+import Fylo from '../asset/fylo.jpg'
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
 
 export default function Experience() {

@@ -87,5 +87,5 @@ const p2 = 'text-center font-mono text-bgLight3 dark:text-cyan text-xs flex just
 const divSosmed = 'flex justify-center gap-10 my-3 md:hidden'
 
 const divSosmedDesk = 'md:flex items-center fixed bottom-0 left-5 lg:left-[50px] flex-col justify-center gap-10 hidden'
-const line = 'w-[2px] h-20 bg-bgLight3 dark:bg-gray1'
+const line = 'w-[2px] h-20 bg-bgLight3 dark:bg-cyan'
 const aSosmed = 'text-bgLight3 dark:text-cyan dark:hover:text-cyan hover:animate-ping'

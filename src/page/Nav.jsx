@@ -2,10 +2,12 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-scroll'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import Logo from '../asset/z.png'
+import LogoDark from '../asset/LogoDark.png'
+import LogoLight from '../asset/LogoLight.png'
 import { RiMenu3Fill } from 'react-icons/ri'
 import { FaRegWindowClose } from 'react-icons/fa'
-import { BsArrowDownCircle, BsFillMoonFill, BsSun } from 'react-icons/bs'
+import { BsArrowDownCircle, BsFillMoonFill,  } from 'react-icons/bs'
+import { IoMdSunny } from 'react-icons/io'
 
 export default function Nav() {
   const [theme, setTheme] = useState('dark')
@@ -49,7 +51,7 @@ export default function Nav() {
     <div className={isiNav}>
 
       <div className={logo} data-aos='fade-rigth'>
-        <Link to='home' smooth={true} duration={900}><img src={Logo} alt="logo" /></Link>
+        <Link to='home' smooth={true} duration={900}><img src={theme === 'dark' ? LogoDark : LogoLight} alt="logo" /></Link>
       </div>
 
       <ul className={navDesk} data-aos='fade-left'>
@@ -62,7 +64,7 @@ export default function Nav() {
 
       <div className='flex gap-10'>
         <button className={navTheme} onClick={handleTheme}>
-          {theme === 'dark' ? <BsSun /> : <BsFillMoonFill />}
+          {theme === 'dark' ? <BsFillMoonFill /> : <IoMdSunny />}
         </button>
 
         <button onClick={handleNav} data-aos='fade-left' className={navMenu}>
@@ -85,8 +87,8 @@ export default function Nav() {
 
 const nav = 'w-full top-0 left-0 z-50'
 // bg-bg3/10 backdrop-blur-md -  to make blur bg
-const isiNav = 'flex px-3 w-full z-50 bg-gray1 dark:bg-bg3  sm:px-16 h-20 justify-between place-items-center shadow-xl shadow-bgLight3/20 dark:shadow-black/20 fixed'
-const logo = 'w-[50px] md:w-[70px] cursor-pointer z-40'
+const isiNav = 'flex px-3 w-full z-50 bg-gray1 dark:bg-bg3  sm:px-16 h-20 justify-between place-items-center shadow-xl shadow-bgLight3/10 dark:shadow-black/20 fixed'
+const logo = 'w-[40px] md:w-[50px] cursor-pointer z-40'
 
 const navDesk = 'hidden md:flex flex-row gap-5 items-center text-sm gap-10'
 

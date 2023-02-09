@@ -19,5 +19,5 @@ export default function Work1() {
   </section>
 }
 
-const div = 'flex my-10 border-b-2 p-3 border-gray1 justify-between sm:justify-around hover:bg-bg2'
-const span = 'hover:text-cyan text-gray1 font-semibold hover:border-b-2 border-cyan p-3 '
+const div = 'flex my-10 border-b-2 p-3 border-LightDark dark:border-gray1 justify-between sm:justify-around dark:hover:bg-bg2'
+const span = 'hover:text-bgLight3 dark:hover:text-cyan text-bg2 dark:text-gray1 font-semibold hover:border-b-2 border-bgLight3 dark:border-cyan p-3 '

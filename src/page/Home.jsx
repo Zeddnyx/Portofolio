@@ -21,8 +21,8 @@ export default function Home() {
 
 const section = 'max-w-xs mt-60'
 const div1 = 'mt-10 grid gap-2'
-const p = 'font-mono text-cyan'
-const h1 = 'font-ls w-60 text-5xl sm:text-6xl md:text-7xl text-gray1 lg:text-8xl'
-const h2 = 'font-ls text-3xl w-80 md:w-[600px] sm:text-4xl md:text-6xl w-[600px] text-gray3'
-const p2 = 'text-gray3 w-[380px]font-sans pr-80 sm:pr-60 lg:pr-40 text-sm font-bold mt-5 '
-const button = 'w-40 mt-5 p-2 border font-bold border-cyan rounded hover:bg-bg2 text-cyan font-mono'
+const p = 'font-mono text-bgLight3 dark:text-cyan'
+const h1 = 'font-ls w-60 text-5xl sm:text-6xl md:text-7xl text-bg3 dark:text-gray1 lg:text-8xl'
+const h2 = 'font-ls text-3xl w-80 md:w-[600px] sm:text-4xl md:text-6xl w-[600px] text-bg3 dark:text-gray3'
+const p2 = 'text-bg3 dark:text-gray3 w-[380px]font-sans pr-80 sm:pr-60 lg:pr-40 text-sm font-bold mt-5 '
+const button = 'w-40 mt-5 p-2 border font-bold border-bgLight3 dark:border-cyan rounded hover:bg-gray3 dark:hover:bg-bg2 text-bgLight3 dark:text-cyan font-mono'

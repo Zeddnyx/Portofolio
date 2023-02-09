@@ -85,7 +85,7 @@ export default function Nav() {
 
 const nav = 'w-full top-0 left-0 z-50'
 // bg-bg3/10 backdrop-blur-md -  to make blur bg
-const isiNav = 'flex px-3 w-full z-50 bg-gray2 dark:bg-bg3  sm:px-16 h-20 justify-between place-items-center shadow-xl fixed'
+const isiNav = 'flex px-3 w-full z-50 bg-gray1 dark:bg-bg3  sm:px-16 h-20 justify-between place-items-center shadow-xl fixed'
 const logo = 'w-[50px] md:w-[70px] cursor-pointer z-40'
 
 const navDesk = 'hidden md:flex flex-row gap-5 items-center text-sm gap-10'

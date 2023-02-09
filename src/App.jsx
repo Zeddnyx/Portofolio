@@ -10,7 +10,7 @@ import Contact from './page/Contact'
 function App() {
 
   return (
-    <div className='text-white bg-gray2 dark:bg-bg3 relative overflow-hidden'>
+    <div className='text-white bg-gray1 dark:bg-bg3 relative overflow-hidden'>
       <Nav />
       <div className='px-6 dark:bg-bg3 h-full w-full sm:px-20 lg:px-40'>
         <Home />

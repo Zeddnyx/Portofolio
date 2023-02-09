@@ -36,12 +36,12 @@ export default function About() {
 
 const div1 = 'mt-60 text-bg3 dark:text-gray1'
 
-const h1 = 'text-2xl sm:text-4xl md:text-4xl font-bold font-ls hover:text-cyan md:my-8'
+const h1 = 'text-2xl sm:text-4xl md:text-4xl font-bold font-ls hover:text-bgLight3 dark:hover:text-cyan md:my-8'
 const h1Div = 'w-full h-[1px] dark:bg-gray1'
 
 const div2 = 'flex flex-col gap-12 md:flex-row'
 
-const article = 'flex flex-col px-5 md:px-0 gap-4 mt-5 text-bg3 dark:text-gray3 text-sm md:text-md lg:text-lg'
+const article = 'flex flex-col px-5 font-semibold md:px-0 gap-4 mt-5 text-bg3 dark:text-gray3 text-sm md:text-md lg:text-lg'
 const pSpan = 'text-bgLight3 dark:text-cyan'
 const ul = 'grid grid-cols-2 list-disc px-5 font-mono text-bgLight3 dark:text-cyan'
 

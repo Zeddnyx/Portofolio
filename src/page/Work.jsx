@@ -29,5 +29,5 @@ export default function Work() {
   </section>
 }
 const section = 'mt-40'
-const h1 = 'text-2xl sm:text-4xl text-bg3 dark:text-gray1 md:text-5xl font-bold font-ls hover:text-cyan md:my-8'
+const h1 = 'text-2xl sm:text-4xl text-bg3 dark:text-gray1 md:text-5xl font-bold font-ls hover:text-bgLight3 dark:hover:text-cyan md:my-8'
 

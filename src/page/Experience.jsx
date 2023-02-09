@@ -60,7 +60,7 @@ export default function Experience() {
 }
 
 const section = 'mt-40'
-const h1 = 'text-2xl sm:text-4xl text-bg3 dark:text-gray1 md:text-5xl font-bold font-ls hover:text-cyan md:my-8'
+const h1 = 'text-2xl sm:text-4xl text-bg3 dark:text-gray1 md:text-5xl font-bold font-ls hover:text-bgLight3 dark:hover:text-cyan md:my-8'
 const h1Div = 'w-full h-[1px] dark:bg-gray1'
 
 const parentProject = 'mt-10 relative mx-auto max-w-xl px-5 gap-36 flex flex-col'

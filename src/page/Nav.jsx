@@ -95,6 +95,6 @@ const navMenu = 'z-40 md:hidden outline-none text-bgLight3 dark:text-cyan'
 const navMobile = 'flex md:hidden absolute w-[75%] sm:w-[50%] h-screen items-center gap-[70px] py-36 bg-gray2 dark:bg-bg1 z-30 flex-col right-0 top-0'
 const blur = 'w-full h-screen backdrop-blur-sm absolute top-0 left-0'
 const li = 'hover:text-bgLight3 dark:hover:text-cyan hover:border-b cursor-pointer border-bgLight3 dark:border-cyan font-mono font-bold text-LightDark dark:text-gray1'
-const btnResume = 'px-5 py-2 flex gap-2 items-center text-bgLight3 dark:text-cyan border font-bold border-bgLight3 dark:border-cyan rounded hover:bg-gray3 dark:md:hover:bg-bg1 dark:hover:bg-bg2 outline-none font-mono'
+const btnResume = 'px-5 py-2 flex gap-2 items-center text-bgLight3 dark:text-cyan border font-bold border-bgLight3 dark:border-cyan rounded hover:bg-bgLight3 hover:text-bgLight1 dark:md:hover:bg-bg1 dark:hover:bg-bg2 outline-none font-mono'
 const spanDownload = 'animate-bounce'
 

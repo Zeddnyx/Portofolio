@@ -84,7 +84,7 @@ const btn = 'px-4 py-2 rounded border-bgLight3 dark:border-cyan lg:w-96 outline-
 const iconSend = 'hover:animate-bounce delay-800 ease-out'
 const p2 = 'text-center font-mono text-bgLight3 dark:text-cyan text-xs flex justify-center gap-2 mt-20 mb-2 items-center'
 
-const divSosmed = 'flex justify-center gap-10 my-3 md:hidden'
+const divSosmed = 'flex justify-center gap-10 my-5 md:hidden'
 
 const divSosmedDesk = 'md:flex items-center fixed bottom-0 left-5 lg:left-[50px] flex-col justify-center gap-10 hidden'
 const line = 'w-[2px] h-20 bg-bgLight3 dark:bg-cyan'

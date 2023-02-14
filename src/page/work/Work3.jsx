@@ -1,7 +1,8 @@
 export default function Work1() {
   return <span className={span}>
     <h1 className={h1}>Freelance <span className='text-bgLight3 dark:text-cyan'>@lorem ipsum</span></h1>
-    <p className={desc}>same as my previous section i don't have experience work at compeny, but i do lot of project
+    <p className={desc}>
+      
     </p>
   </span>
 }

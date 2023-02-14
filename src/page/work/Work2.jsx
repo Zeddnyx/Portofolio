@@ -1,7 +1,7 @@
 export default function Work1() {
   return <span className={span}>
     <h1 className={h1}>Front End <span className='text-bgLight3 dark:text-cyan'>@lorem ipsum</span></h1>
-    <p className={desc}>Unfortunately i never have experience</p>
+    <p className={desc}></p>
   </span>
 }
 

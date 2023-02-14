@@ -13,7 +13,7 @@ export default function About() {
     <h1 data-aos='fade-left' className={h1}>About Me</h1>
     <div className={div2}>
       <article data-aos='fade-top' className={article}>
-        <p>Hello! My name is Jaenudin but i would love if you call me <span className={pSpan}>Zedd</span>, and i enjoy crating things that
+        <p>Hello! My name is Jaenudin but i would love if you call me <span className={pSpan}>Zedd</span> or <span className={pSpan}>Jay</span> , and i enjoy crating things that
            live on internet. My interest in front end developer started back in 2022 when
            i decide to try make bin generator thaught me a lot about HTML, CSS, and JavaScript
         </p>

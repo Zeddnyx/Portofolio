@@ -92,9 +92,9 @@ const logo = 'w-[40px] md:w-[50px] cursor-pointer z-40'
 
 const navDesk = 'hidden md:flex flex-row gap-5 items-center text-sm gap-10'
 
-const navTheme = 'text-bgLight3 dark:text-cyan outline-none text-xl z-50'
+const navTheme = 'text-bgLight3 dark:text-cyan outline-none text-xl z-50 transition hover:animate-spin'
 
-const navMenu = 'z-40 md:hidden outline-none text-bgLight3 dark:text-cyan'
+const navMenu = 'z-40 md:hidden outline-none text-bgLight3 dark:text-cyan '
 const navMobile = 'flex md:hidden absolute w-[75%] sm:w-[50%] h-screen items-center gap-[70px] py-36 bg-gray1 dark:bg-bg1 z-30 flex-col right-0 top-0'
 const blur = 'w-full h-screen backdrop-blur-sm absolute top-0 left-0'
 const li = 'hover:text-bgLight3 dark:hover:text-cyan hover:border-b cursor-pointer border-bgLight3 dark:border-cyan font-mono font-bold text-LightDark dark:text-gray1'

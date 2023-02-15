@@ -14,7 +14,7 @@ export default function Contact() {
   const valid = yup.object().shape({
     name: yup.string().required(),
     email: yup.string().email().required(),
-    msg: yup.string().required(),
+    msg: yup.string().required('Please input a message'),
   })
 
   const { handleSubmit, register, formState: {errors}, reset } = useForm({
@@ -50,8 +50,8 @@ export default function Contact() {
         <span className='text-red-500 text-sm'>{errors.name?.message}</span>
         <input className={input} type='email' id='email' placeholder='your@email.com' {...register('email')} />
         <span className='text-red-500 text-sm'>{errors.email?.message}</span>
-        <textarea className={textarea} type='text' id='message' placeholder='write a message...' {...register('message')} ></textarea>
-        <span className='text-red-500 text-sm'>{errors.message?.message}</span>
+        <textarea className={textarea} type='text' id='msg' placeholder='write a message...' {...register('msg')} ></textarea>
+        <span className='text-red-500 text-sm'>{errors.msg?.message}</span>
 
         <button className={btn} type="submit"><span className={iconSend}><IoIosSend size='25' /></span></button>
       </form>
@@ -86,8 +86,8 @@ const p = 'p-5 text-LightDark dark:text-gray3 font-semibold text-sm lg:text-md m
 const form = 'grid grid-cols-1 gap-4 max-w-xs mx-auto'
 const input = 'bg-transparent text-LightDark dark:text-gray1 dark:hover:bg-bg2 lg:w-96 outline-none rounded border border-bgLight3 dark:border-cyan p-2 text-LightDark dark:text-gray1 text-sm lg:text-md'
 const textarea = 'bg-transparent text-LightDark dark:text-gray1 dark:hover:bg-bg2 outline-none rounded border border-bgLight3 dark:border-cyan p-2 h-40 lg:w-96 text-sm lg:text-md'
-const btn = 'px-4 py-2 rounded border-bgLight3 dark:border-cyan lg:w-96 outline-none border text-bgLight3 dark:text-cyan font-semibold font-ls my-2 hover:bg-bgLight3 hover:text-bgLight1 dark:hover:bg-bg2 flex justify-center gap-3 items-center'
-const iconSend = 'hover:animate-ping delay-800 ease-out'
+const btn = 'px-4 group py-2 rounded border-bgLight3 dark:border-cyan lg:w-96 outline-none border text-bgLight3 dark:text-cyan font-semibold font-ls my-2 hover:bg-bgLight3 hover:text-bgLight1 dark:hover:bg-bg2 flex justify-center gap-3 items-center'
+const iconSend = 'group-hover:animate-ping delay-800 ease-out'
 const p2 = 'text-center font-mono text-bgLight3 dark:text-cyan text-xs flex justify-center gap-2 mt-20 mb-2 items-center'
 
 const divSosmed = 'flex justify-center gap-10 my-5 md:hidden'

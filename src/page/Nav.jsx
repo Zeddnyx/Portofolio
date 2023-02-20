@@ -62,7 +62,7 @@ export default function Nav() {
         <button className={btnResume} type="submit">Resume<span className={spanDownload}><BsArrowDownCircle /></span></button>
       </ul>
 
-      <div className='flex gap-10'>
+      <div data-aos='fade-left' className='flex gap-10'>
         <button className={navTheme} onClick={handleTheme}>
           {theme === 'dark' ? <BsFillMoonFill /> : <IoMdSunny />}
         </button>

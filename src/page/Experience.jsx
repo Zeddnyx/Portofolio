@@ -34,7 +34,7 @@ export default function Experience() {
 
 
   const OtherProject = ({link, title, desc, tag}) => {
-    return <div data-aos='fade-down' className='w-full bg-bgLight3 dark:bg-bg2 mx-auto p-3'>
+    return <div data-aos='fade-down' className='w-full bg-bgLight3 dark:bg-bg2 mx-auto p-5'>
       <div className='flex justify-between'>
         <span className='dark:text-cyan'><GoFileDirectory size='20'/></span>
         <a href={link}><FiGithub /></a>

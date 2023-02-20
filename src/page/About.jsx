@@ -22,8 +22,10 @@ export default function About() {
         <ul className={ul}>
           <li>JavaScript</li>
           <li>Tailwind CSS</li>
-          <li>React</li>
-          <li>Next.js</li>
+          <li>ReactJS</li>
+          <li>Next.JS</li>
+          <li>Linux (Arch)</li>
+          <li>Neovim (IDE)</li>
         </ul>
       </article>
       <div className={divImg} data-aos='fade-bottom'>
@@ -46,5 +48,5 @@ const pSpan = 'text-bgLight3 dark:text-cyan'
 const ul = 'grid grid-cols-2 list-disc px-5 font-mono text-bgLight3 dark:text-cyan'
 
 const divImg = 'w-[290px] h-[310px] relative rounded border-2 border-bgLight3 dark:border-cyan mx-auto my-5'
-const divDiv = 'w-[285px] h-[300px] bg-bgLight3 dark:bg-cyan z-20 relative opacity-50 hover:opacity-0 -mx-5 md:mx-5 my-5'
+const divDiv = 'w-[285px] h-[300px] bg-bgLight3 dark:bg-cyan z-20 relative opacity-70 hover:opacity-0 -mx-5 md:mx-5 my-5'
 const img = 'w-[300px] rounded h-[300px] relative -mx-5 -my-[300px] md:mx-5 bg-cyan -my-80'

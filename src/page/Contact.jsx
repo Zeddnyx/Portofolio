@@ -90,7 +90,7 @@ export default function Contact() {
 const section = 'mt-60'
 
 const div = 'w-full mx-auto text-center'
-const h1 = 'text-2xl sm:text-4xl text-bg3 dark;text-gray1 md:text-5xl font-bold font-ls hover:text-bgLight3 dark:hover:text-cyan md:my-8'
+const h1 = 'text-2xl sm:text-4xl text-bg3 dark:text-gray1 md:text-5xl font-bold font-ls hover:text-bgLight3 dark:hover:text-cyan md:my-8'
 const p = 'p-5 text-LightDark dark:text-gray3 font-semibold text-sm lg:text-md md:px-10 lg:px-40'
 
 const form = 'grid grid-cols-1 gap-4 max-w-md mx-auto'

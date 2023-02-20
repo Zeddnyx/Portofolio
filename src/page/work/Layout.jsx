@@ -19,5 +19,5 @@ export default function Work1() {
   </section>
 }
 
-const div = 'font-mono grid grid-cols-3 text-center my-10 border-b-2  border-LightDark dark:border-gray1'
+const div = 'font-mono grid grid-cols-3 text-sm text-center my-10 border-b-2  border-LightDark dark:border-gray1'
 const span = 'hover:text-bgLight3 dark:hover:text-cyan text-bg2 dark:text-gray1 font-semibold hover:border-b-2  dark:hover:bg-bg2 border-bgLight3 dark:border-cyan p-3 '

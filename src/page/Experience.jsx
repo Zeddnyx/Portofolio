@@ -76,7 +76,7 @@ export default function Experience() {
     </div>
 
     <div className='mt-20' data-aos='fade-up'>
-      <h1 className='text-center font-ls text-3xl'>Other Noteworthy Projects</h1>
+      <h1 className='text-center text-bgLight3 dark:text-white font-ls text-3xl'>Other Noteworthy Projects</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 mt-8 mx-5'>
         <OtherProject link='https://github.com/Zeddnyx/cekRekening' title='Check Rekening'
           desc='working with api, this tools for check rekening (name, number rekening, name bank)' tag='API, ReactJS, TailwindCSS'

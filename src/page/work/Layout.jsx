@@ -11,9 +11,9 @@ export default function Work1() {
 
   return <section>
     <div data-aos='fade-top' className={div}>
-      <Link to='/'><span className={span}>Work</span></Link>
-      <Link to='/work2'><span className={span}>Work 2 </span></Link>
-      <Link to='/work3'><span className={span}>Work 3</span></Link>
+      <Link to='/'><span className={span}>TemanTrip</span></Link>
+      <Link to='/work2'><span className={span}>Work </span></Link>
+      <Link to='/work3'><span className={span}>Work </span></Link>
     </div>
     <Outlet />
   </section>

@@ -14,7 +14,7 @@ export default function Experience() {
   }, [])
 
   const Project = props => {
-    return <div data-aos='fade-down' className='grid gap-5'>
+    return <div data-aos='fade-right' className='grid gap-5'>
       <h1 className={number}>{props.number}</h1>
       <div className={projectBg}>
         <h1 className={h1JudulProject}>{props.judul}</h1>
@@ -34,7 +34,7 @@ export default function Experience() {
 
 
   const OtherProject = ({link, title, desc, tag}) => {
-    return <div className='w-full bg-bgLight3 dark:bg-bg2 mx-auto p-3'>
+    return <div data-aos='fade-down' className='w-full bg-bgLight3 dark:bg-bg2 mx-auto p-3'>
       <div className='flex justify-between'>
         <span className='dark:text-cyan'><GoFileDirectory size='20'/></span>
         <a href={link}><FiGithub /></a>
@@ -77,7 +77,7 @@ export default function Experience() {
 
     <div className='mt-20' data-aos='fade-up'>
       <h1 className='text-center text-bgLight3 dark:text-white font-ls text-3xl'>Other Noteworthy Projects</h1>
-      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 mt-8 mx-5'>
+      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 mt-8'>
         <OtherProject link='https://github.com/Zeddnyx/cekRekening' title='Check Rekening'
           desc='working with api, this tools for check rekening (name, number rekening, name bank)' tag='API, ReactJS, TailwindCSS'
         />

@@ -3,6 +3,9 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({duration:800})
+  }, [])
 
   return <section name='home' data-aos='fade-up' className={section}>
     <div className={div1}>

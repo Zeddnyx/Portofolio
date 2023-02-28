@@ -6,7 +6,7 @@ import Hero from '../asset/hero.jpg'
 export default function About() {
 
   useEffect(() => {
-    AOS.init({duration:900})
+    AOS.init({duration:1000})
   }, [])
 
   return <div name='about' className={div1}>

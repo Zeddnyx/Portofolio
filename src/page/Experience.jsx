@@ -5,12 +5,12 @@ import Nvim from '../asset/nvim.png'
 import News from '../asset/news.png'
 import Fylo from '../asset/fylo.jpg'
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
-import { GoFileDirectory } from 'react-icons/go'
+import { AiOutlineFolder } from 'react-icons/ai'
 
 export default function Experience() {
 
   useEffect(() => {
-    AOS.init({duration:900})
+    AOS.init({duration:1000})
   }, [])
 
   const Project = props => {
@@ -35,13 +35,13 @@ export default function Experience() {
 
   const OtherProject = ({link, title, desc, tag}) => {
     return <div data-aos='fade-down' className='w-full bg-bgLight3 dark:bg-bg2 mx-auto p-5'>
-      <div className='flex justify-between'>
-        <span className='dark:text-cyan'><GoFileDirectory size='20'/></span>
-        <a href={link}><FiGithub /></a>
+      <div className='flex justify-between items-center mb-8'>
+        <span className='dark:text-cyan'><AiOutlineFolder size='30'/></span>
+        <a href={link}><FiGithub size='20'/></a>
       </div>
 
       <div>
-        <h2 className='font-ls text-lg mt-2 text-white dark:hover:text-cyan'>{title}</h2>
+        <h2 className='font-ls text-2xl mt-2 text-white dark:hover:text-cyan'>{title}</h2>
         <p className='text-sm text-white'>{desc}</p>
         <p className='font-mono text-[#bbb] text-sm mt-3'>{tag}</p>
       </div>
@@ -60,7 +60,7 @@ export default function Experience() {
           a='https://github.com/Zeddnyx/Fylo'  a2='https://fylo-zedd.netlify.app' 
           img={Fylo} alt='Fylo landing page'
         />
-        <Project number='02' judul='News' 
+        <Project number='02' judul='News homepage' 
           desc='News. this also chalanges from FrontEndMentor and i use API to update the news article' 
           tag='React, Tailwind CSS, NYTIMES API, Netlify'
           a='https://github.com/Zeddnyx/News' a2='https://zedd-news.netlify.app' 

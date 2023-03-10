@@ -22,9 +22,9 @@ module.exports = {
         bg2:   '#112240',
         bg3:   '#0a192f',
 
-        bgLight1: '#fff',
-        bgLight2: '#ebf5ff',
-        bgLight3: '#6e07f3',
+        bgLight1:  '#fff',
+        bgLight2:  '#ebf5ff',
+        bgLight3:  '#6e07f3',
         LightCyan: '#5be9b9',
         lightBlue: '#1a8cff',
         LightDark: '#141c3a'

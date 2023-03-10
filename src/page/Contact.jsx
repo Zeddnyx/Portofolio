@@ -93,7 +93,7 @@ const div = 'w-full mx-auto text-center'
 const h1 = 'text-2xl sm:text-4xl text-bg3 dark:text-gray1 md:text-5xl font-bold font-ls hover:text-bgLight3 dark:hover:text-cyan md:my-8'
 const p = 'p-5 text-LightDark dark:text-gray3 font-semibold text-sm lg:text-md md:px-10 lg:px-40'
 
-const form = 'grid grid-cols-1 gap-4 max-w-md mx-auto'
+const form = 'grid grid-cols-1 gap-4 max-w-2xl mx-auto'
 const parentInput = 'grid grid-cols-3 gap-2'
 const input = 'bg-transparent text-LightDark dark:text-gray1 dark:hover:bg-bg2 w-full outline-none rounded border border-bgLight3 dark:border-cyan p-2 text-LightDark dark:text-gray1 text-sm lg:text-md'
 const textarea = 'bg-transparent text-LightDark dark:text-gray1 dark:hover:bg-bg2 w-full outline-none rounded border border-bgLight3 dark:border-cyan p-2 h-40 text-sm lg:text-md'

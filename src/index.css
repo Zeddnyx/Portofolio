@@ -1,3 +1,125 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+/* global css */
+.section {
+  @apply mt-60 text-bg3 dark:text-gray1
+}
+.h1-judul-section {
+  @apply text-2xl sm:text-4xl md:text-4xl font-bold font-ls hover:text-bgLight3 dark:hover:text-cyan md:my-8
+}
+
+
+.nav {
+  @apply w-full top-0 left-0 z-50
+}
+.nav-bg {
+  @apply flex px-3 w-full z-50 bg-gray1 dark:bg-bg3  sm:px-16 h-20 justify-between place-items-center shadow-lg shadow-bgLight3/10 dark:shadow-black/20 fixed
+}
+.logo {
+  @apply w-[40px] md:w-[50px] cursor-pointer z-40
+}
+.nav-desktop {
+  @apply hidden md:flex flex-row gap-5 items-center text-sm gap-10
+}
+.btn-resume {
+  @apply px-5 py-2 flex gap-2 items-center text-bgLight3 dark:text-cyan border font-bold border-bgLight3 dark:border-cyan rounded hover:bg-bgLight3 hover:text-bgLight1 dark:md:hover:bg-bg1 dark:hover:bg-bg2 outline-none font-mono
+}
+.btn-theme {
+  @apply text-bgLight3 dark:text-cyan outline-none text-xl z-50 transition
+}
+.nav-menu {
+  @apply z-50 md:hidden outline-none text-bgLight3 dark:text-cyan
+}
+.nav-mobile {
+  @apply flex md:hidden absolute w-[75%] sm:w-[50%] h-screen items-center gap-[70px] py-36 bg-gray1 dark:bg-bg1 z-30 flex-col right-0 top-0
+}
+.nav-blur {
+  @apply w-full md:hidden h-screen backdrop-blur-sm absolute top-0 left-0
+}
+.nav-li {
+  @aply hover:text-bgLight3 dark:hover:text-cyan hover:border-b cursor-pointer border-bgLight3 dark:border-cyan font-mono font-bold text-LightDark dark:text-gray1
+}
+
+
+
+.home-section {
+  @apply max-w-xs mt-60
+}
+.home-div {
+  @apply mt-10 grid gap-2
+}
+.home-p {
+  @apply font-mono text-bgLight3 dark:text-cyan
+}
+.home-h1 {
+  @apply font-ls w-60 text-5xl sm:text-6xl md:text-7xl text-bg3 dark:text-gray1 lg:text-8xl
+}
+.home-h2 {
+  @apply font-ls text-3xl w-80 md:w-[600px] sm:text-4xl md:text-6xl w-[600px] text-bg3 dark:text-gray3
+}
+.home-p2 {
+  @apply text-bg3 dark:text-gray3 font-sans pr-80 sm:pr-40 lg:pr-40 text-sm font-bold mt-5
+}
+.home-btn {
+  @apply w-40 mt-5 p-2 border font-bold border-bgLight3 dark:border-cyan rounded hover:bg-bgLight3 dark:hover:bg-bg2 text-bgLight3 hover:text-bgLight1 dark:text-cyan font-mono
+}
+
+
+.about-div {
+  @apply flex flex-col gap-12 md:flex-row
+}
+.about-introduce {
+  @apply flex flex-col px-5 font-semibold md:px-0 gap-4 mt-5 text-bg3 dark:text-gray3 text-sm md:text-sm
+}
+.about-span {
+  @apply text-bgLight3 dark:text-cyan
+}
+.about-ul {
+  @apply grid grid-cols-2 list-disc px-5 font-mono text-bgLight3 dark:text-cyan
+}
+.about-img {
+  @apply w-[290px] h-[310px] relative rounded border-2 border-bgLight3 dark:border-cyan mx-auto my-5
+}
+.about-img-div {
+  @apply w-[285px] h-[300px] bg-bgLight3 dark:bg-cyan z-20 relative opacity-70 hover:opacity-0 -mx-5 md:mx-5 my-5
+}
+.about-img-img {
+  @apply w-[300px] rounded h-[300px] relative -mx-5 -my-[300px] md:mx-5 bg-cyan -my-80
+}
+
+
+.expericence-project {
+  @apply mt-10 px-5 flex gap-5
+}
+.project-bg {
+  @apply bg-bgLight3 dark:bg-bg2 absolute w-full h-full p-5 opacity-90 md:w-80 md:opacity-90 md:left-0 flex flex-col justify-center items-start z-20
+}
+.project-h1-judul {
+  @apply font-bold font-ls text-2xl
+}
+.project-p-desc {
+  @apply my-3 text-bgLight1 dark:text-gray2 font-semibold
+}
+.project-p-tag {
+  @apply font-mono text-sm py-3 text-white dark:text-cyan
+}
+.project-img-parent {
+  @apply w-full h-full
+}
+.project-img-div {
+  @apply absolute h-full w-full opacity-0 bg-bgLight3 dark:bg-bg2 md:opacity-70 hover:opacity-0 top-0
+}
+.project-img {
+  @apply w-full h-full
+}
+
+.h3-other-project {
+  @apply text-center text-bgLight3 dark:text-white font-ls text-2xl
+}
+.parent-other-project {
+  @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 mt-8
+}

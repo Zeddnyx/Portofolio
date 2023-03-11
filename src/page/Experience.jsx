@@ -18,7 +18,7 @@ export default function Experience() {
     <div className='experience-project'>
       <div data-aos='fade-down' className='w-2 rounded bg-bgLight3 dark:bg-cyan md:hidden'>
       </div>
-      <div className='flex flex-col gap-10 flex-grow'>
+      <div className='grid grid-cols-1 justify-center place-items-center gap-20 md:gap-20 lg:ml-20 xl:ml-48'>
         <Project judul='Fylo' 
           desc="This is my first project with React and Tailwindcss. Fylo it's a landing page, this chalanges form FronEndMentor which a platform for learn slicing, integerate API, etc, for front end developer like me"
           tag='React, Tailwind CSS, Netlify'

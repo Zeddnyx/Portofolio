@@ -23,7 +23,6 @@ export default function About() {
           <li>JavaScript</li>
           <li>Tailwind CSS</li>
           <li>ReactJS</li>
-          <li>Next.JS</li>
           <li>Linux (Arch)</li>
           <li>Neovim (IDE)</li>
         </ul>

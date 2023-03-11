@@ -85,7 +85,7 @@
   @apply w-[290px] h-[310px] relative rounded border-2 border-bgLight3 dark:border-cyan mx-auto my-5
 }
 .about-img-div {
-  @apply w-[285px] h-[300px] bg-bgLight3 dark:bg-cyan z-20 relative opacity-70 hover:opacity-0 -mx-5 md:mx-5 my-5
+  @apply w-[285px] h-[300px] bg-bgLight3 dark:bg-cyan z-20 relative opacity-70 hover:opacity-0 transition-all duration-500  -mx-5 md:mx-5 my-5
 }
 .about-img-img {
   @apply w-[300px] rounded h-[300px] relative -mx-5 -my-[300px] md:mx-5 bg-cyan -my-80
@@ -96,7 +96,7 @@
   @apply mt-10 px-5 flex gap-5
 }
 .project-bg {
-  @apply bg-bgLight3 dark:bg-bg2 absolute w-full h-full p-5 opacity-90 md:w-80 md:opacity-90 md:left-0 flex flex-col justify-center items-start z-20
+  @apply bg-bgLight3 dark:bg-bg2 absolute w-full h-96 md:h-[350px] md:w-80 lg:h-72 lg:-left-10 xl:w-[430px] xl:-left-40 p-5 opacity-90  md:opacity-90 md:left-0  flex flex-col justify-center items-start z-20
 }
 .project-h1-judul {
   @apply font-bold font-ls text-2xl
@@ -107,14 +107,15 @@
 .project-p-tag {
   @apply font-mono text-sm py-3 text-white dark:text-cyan
 }
+
 .project-img-parent {
-  @apply w-full h-full
+  @apply w-full h-full md:h-[350px] md:w-[650px] lg:h-96 lg:w-[700px] left-20
 }
 .project-img-div {
-  @apply absolute h-full w-full opacity-0 bg-bgLight3 dark:bg-bg2 md:opacity-70 hover:opacity-0 top-0
+  @apply absolute h-full w-full opacity-30 bg-bgLight3 dark:bg-bg2 md:opacity-70 transition-all duration-500 hover:opacity-0 top-0 xl:w-[700px]
 }
 .project-img {
-  @apply w-full h-full
+  @apply h-96 w-full md:h-full
 }
 
 .h3-other-project {

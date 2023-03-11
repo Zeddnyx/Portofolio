@@ -85,10 +85,10 @@
   @apply w-72 h-[305px] relative rounded border-2 border-bgLight3 dark:border-cyan mx-auto my-5
 }
 .about-img-div {
-  @apply w-full h-full bg-bgLight3 dark:bg-cyan z-20 relative opacity-70 hover:opacity-0 transition-all duration-500  -mx-5 md:mx-5 my-5
+  @apply w-full h-full bg-bgLight3 dark:bg-cyan z-20 relative opacity-70 hover:opacity-0 transition-all duration-500 top-8 left-9 hover:top-5 hover:left-5
 }
 .about-img-img {
-  @apply w-[350px] rounded h-[300px] relative -mx-5 -my-[300px] md:mx-5 bg-cyan -my-80
+  @apply w-[350px] rounded h-[300px] absolute top-8 left-9
 }
 
 

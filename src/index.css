@@ -32,10 +32,10 @@
   @apply text-bgLight3 dark:text-cyan outline-none text-xl z-50 transition
 }
 .nav-menu {
-  @apply z-50 md:hidden outline-none text-bgLight3 dark:text-cyan
+  @apply z-40 md:hidden outline-none text-bgLight3 dark:text-cyan
 }
 .nav-mobile {
-  @apply flex md:hidden absolute w-[75%] sm:w-[50%] h-screen items-center gap-[70px] py-36 bg-gray1 dark:bg-bg1 z-30 flex-col right-0 top-0
+  @apply flex md:hidden transition-all duration-500 absolute w-[75%] sm:w-[50%] h-screen items-center gap-[70px] py-36 bg-gray1 dark:bg-bg1 text-bg2 dark:text-white z-30 flex-col right-0 top-0
 }
 .nav-blur {
   @apply w-full md:hidden h-screen backdrop-blur-sm absolute top-0 left-0
@@ -70,7 +70,7 @@
 
 
 .about-div {
-  @apply flex flex-col gap-12 md:flex-row
+  @apply grid grid-cols-1 md:grid-cols-2 gap-12
 }
 .about-introduce {
   @apply flex flex-col px-5 font-semibold md:px-0 gap-4 mt-5 text-bg3 dark:text-gray3 text-sm md:text-sm
@@ -82,13 +82,13 @@
   @apply grid grid-cols-2 list-disc px-5 font-mono text-bgLight3 dark:text-cyan
 }
 .about-img {
-  @apply w-[290px] h-[310px] relative rounded border-2 border-bgLight3 dark:border-cyan mx-auto my-5
+  @apply w-72 h-[305px] relative rounded border-2 border-bgLight3 dark:border-cyan mx-auto my-5
 }
 .about-img-div {
-  @apply w-[285px] h-[300px] bg-bgLight3 dark:bg-cyan z-20 relative opacity-70 hover:opacity-0 transition-all duration-500  -mx-5 md:mx-5 my-5
+  @apply w-full h-full bg-bgLight3 dark:bg-cyan z-20 relative opacity-70 hover:opacity-0 transition-all duration-500  -mx-5 md:mx-5 my-5
 }
 .about-img-img {
-  @apply w-[300px] rounded h-[300px] relative -mx-5 -my-[300px] md:mx-5 bg-cyan -my-80
+  @apply w-[350px] rounded h-[300px] relative -mx-5 -my-[300px] md:mx-5 bg-cyan -my-80
 }
 
 

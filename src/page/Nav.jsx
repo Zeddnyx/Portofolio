@@ -43,7 +43,7 @@ export default function Nav() {
 
   const Li = props => {
     return <li className='nav-li'>
-      <Link onClick={props.click} to={props.to} smooth={true} duration={900}>{props.li}</Link>
+      <Link onClick={props.click} offset={-100} to={props.to} smooth={true} duration={900}>{props.li}</Link>
     </li>
   }
 
@@ -51,7 +51,7 @@ export default function Nav() {
     <div className='nav-bg'>
 
       <div className='logo' data-aos='fade-rigth'>
-        <Link to='home' smooth={true} duration={900}><img src={theme === 'dark' ? LogoDark : LogoLight} alt="logo" /></Link>
+        <Link to='home' smooth={true} offset={-100} duration={900}><img src={theme === 'dark' ? LogoDark : LogoLight} alt="logo" /></Link>
       </div>
 
       <ul className='nav-desktop' data-aos='fade-left'>

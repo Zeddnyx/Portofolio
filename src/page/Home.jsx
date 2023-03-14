@@ -11,7 +11,7 @@ export default function Home() {
     <div className='home-div'>
       <p className='home-p'>Hi, my name is</p>
       <h1 className='home-h1'>Jaenudin.</h1>
-      <h2 className='home-h2'>Front End Devloper.</h2>
+      <h2 className='home-h2'>Jr Front End Developer.</h2>
 
       <p className='home-p2'>I am an experienced front-end developer 
          with a passion for creating 

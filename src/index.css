@@ -23,10 +23,10 @@
   @apply w-[40px] md:w-[50px] cursor-pointer z-40
 }
 .nav-desktop {
-  @apply hidden md:flex flex-row gap-5 items-center text-sm gap-10
+  @apply hidden md:flex flex-row gap-5 items-center text-sm gap-10 text-bgLight3 dark:text-gray1 font-semibold cursor-pointer font-mono
 }
 .btn-resume {
-  @apply px-5 py-2 flex gap-2 items-center text-bgLight3 dark:text-cyan border font-bold border-bgLight3 dark:border-cyan rounded hover:bg-bgLight3 hover:text-bgLight1 dark:md:hover:bg-bg1 dark:hover:bg-bg2 outline-none font-mono
+  @apply px-5 py-2 flex gap-2 items-center text-bgLight3 dark:text-cyan border font-semibold border-bgLight3 dark:border-cyan rounded hover:bg-bgLight3 hover:text-bgLight1 dark:md:hover:bg-bg1 dark:hover:bg-bg2 outline-none font-mono
 }
 .btn-theme {
   @apply text-bgLight3 dark:text-cyan outline-none text-xl z-50 transition
@@ -41,7 +41,7 @@
   @apply w-full md:hidden h-screen backdrop-blur-sm absolute top-0 left-0
 }
 .nav-li {
-  @aply hover:text-bgLight3 dark:hover:text-cyan hover:border-b cursor-pointer border-bgLight3 dark:border-cyan text-LightDark dark:text-gray1 font-mono font-semibold 
+  @aply hover:text-bgLight3 dark:hover:text-cyan hover:border-b cursor-pointer border-bgLight3 dark:border-cyan text-LightDark dark:text-gray1 font-mono font-semibold
 }
 
 
@@ -59,10 +59,10 @@
   @apply font-ls w-60 text-5xl sm:text-6xl md:text-7xl text-bg3 dark:text-gray1 lg:text-8xl
 }
 .home-h2 {
-  @apply font-ls text-3xl w-80 md:w-[600px] sm:text-4xl md:text-6xl w-[600px] text-bg3 dark:text-gray3
+  @apply font-ls text-3xl inline w-[400px] md:w-[680px] sm:text-4xl md:text-6xl  text-bg3 dark:text-gray3
 }
 .home-p2 {
-  @apply text-bg3 dark:text-gray3 font-sans pr-80 sm:pr-40 lg:pr-40 text-sm font-bold mt-5
+  @apply text-bg3 dark:text-gray3 font-sans pr-40 sm:pr-40 lg:pr-40 text-sm font-bold mt-5
 }
 .home-btn {
   @apply w-40 mt-5 p-2 border font-bold border-bgLight3 dark:border-cyan rounded hover:bg-bgLight3 dark:hover:bg-bg2 text-bgLight3 hover:text-bgLight1 dark:text-cyan font-mono
@@ -85,10 +85,10 @@
   @apply w-72 h-[305px] relative rounded border-2 border-bgLight3 dark:border-cyan mx-auto my-5
 }
 .about-img-div {
-  @apply w-full h-full bg-bgLight3 dark:bg-cyan z-20 relative opacity-70 hover:opacity-0 transition-all duration-500 top-8 left-9 hover:top-5 hover:left-5
+  @apply w-full h-full bg-bgLight3 dark:bg-cyan z-20 relative opacity-70 hover:opacity-0 transition-all duration-500 top-4 left-5 hover:top-3 hover:left-3 rounded
 }
 .about-img-img {
-  @apply w-[350px] rounded h-[300px] absolute top-8 left-9
+  @apply w-[350px] rounded h-[300px] absolute top-4 left-5
 }
 
 
@@ -96,7 +96,7 @@
   @apply mt-10 px-5 flex gap-5
 }
 .project-bg {
-  @apply bg-bgLight3 dark:bg-bg2 absolute w-full h-96 md:h-[350px] md:w-80 lg:h-72 lg:-left-10 xl:w-[430px] xl:-left-40 p-5 opacity-90  md:opacity-90 md:left-0  flex flex-col justify-center items-start z-20
+  @apply bg-bgLight3 dark:bg-bg2 absolute w-full h-96 md:h-[350px] md:w-80 lg:h-80 lg:-left-10 xl:w-[430px] xl:-left-40 p-5 opacity-90  md:opacity-90 md:left-0  flex flex-col justify-center items-start z-20
 }
 .project-h1-judul {
   @apply font-bold font-ls text-2xl text-white dark:text-gray1
@@ -123,4 +123,7 @@
 }
 .parent-other-project {
   @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 mt-8
+}
+.other-project-desc {
+  @apply font-semibold text-sm text-white
 }
